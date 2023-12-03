@@ -39,7 +39,7 @@ where status_ = 'yes'
 group by services;
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
-Q.3 highest Selling Services 
+Q.3 Highest Selling Services 
 
 select services,count(status_) as No_customer
 from service_tab
@@ -49,7 +49,7 @@ order by NO_customer desc
 limit 1;
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
-Q.4 lowest selling services ?
+Q.4 Lowest selling services ?
 
 select services,count(status_) as No_customer
 from service_tab
@@ -58,8 +58,8 @@ group by services
 order by NO_customer asc
 limit 1;
 -----------------------------------------------------------------------------------------------------------------------------------------------
-Q.5 how may people accepted and rejected  the offer ?
---ACCEPTENCE--
+Q.5 How may people accepted and rejected  the offer ?
+--ACCEPTED--
 select offer,count(customer_id)as no_customer_accepted
 from telecom_churn
 where offer <> 'none'
