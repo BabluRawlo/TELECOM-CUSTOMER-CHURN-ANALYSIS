@@ -1,4 +1,4 @@
-B.	CUSTOMER OVERVIEW: -
+B.	CUSTOMER OVERVIEW: -----------------------------------------------
 
 Q.1 Total No of customer?
 select count(distinct customer_id) as No_customer
